@@ -72,6 +72,19 @@ namespace Ejercicio1Guia2_MM200149
 
 
             }
+
+            if(rbtnSubgerente.Enabled == true)
+            {
+                descuento = 0.15;
+                total = salario - (salario * descuento);
+
+                txtMDescuento.Text = descuento.ToString();
+                txtSNeto.Text = total.ToString();
+            }
+
+            //secretaria 5%
+
+
         }
     }
 }
