@@ -55,6 +55,7 @@ namespace Ejercicio1Guia2_MM200149
             this.button1.TabIndex = 0;
             this.button1.Text = "Calcular";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -111,6 +112,7 @@ namespace Ejercicio1Guia2_MM200149
             this.rbtnGerente.TabStop = true;
             this.rbtnGerente.Text = "Gerente";
             this.rbtnGerente.UseVisualStyleBackColor = true;
+            this.rbtnGerente.CheckedChanged += new System.EventHandler(this.rbtnGerente_CheckedChanged);
             // 
             // rbtnSubgerente
             // 
@@ -123,6 +125,7 @@ namespace Ejercicio1Guia2_MM200149
             this.rbtnSubgerente.TabStop = true;
             this.rbtnSubgerente.Text = "Subgerente";
             this.rbtnSubgerente.UseVisualStyleBackColor = true;
+            this.rbtnSubgerente.CheckedChanged += new System.EventHandler(this.rbtnSubgerente_CheckedChanged);
             // 
             // rbtnSecretaria
             // 
