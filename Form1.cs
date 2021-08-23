@@ -84,6 +84,16 @@ namespace Ejercicio1Guia2_MM200149
 
             //secretaria 5%
 
+            if (rbtnSecretaria.Enabled == true)
+            {
+                descuento = 0.05;
+                total = salario - (salario * descuento);
+
+                txtMDescuento.Text = descuento.ToString();
+                txtSNeto.Text = total.ToString();
+
+            }
+
 
         }
     }
