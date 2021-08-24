@@ -37,6 +37,7 @@ namespace Ejercicio1Guia2_MM200149
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Deshabilitando el textbox de monto de descuento y salario neto
             txtMDescuento.Enabled = false;
             txtSNeto.Enabled = false;
         }
@@ -62,6 +63,8 @@ namespace Ejercicio1Guia2_MM200149
             double salario, descuento, total;
             salario = Convert.ToDouble(txtSBruto.Text);
 
+            //Gerente 20%
+
             if(rbtnGerente.Enabled == true)
             {
                 descuento = 0.2;
@@ -73,6 +76,8 @@ namespace Ejercicio1Guia2_MM200149
 
             }
 
+            //Subgerente 15%
+
             if(rbtnSubgerente.Enabled == true)
             {
                 descuento = 0.15;
@@ -82,7 +87,7 @@ namespace Ejercicio1Guia2_MM200149
                 txtSNeto.Text = total.ToString();
             }
 
-            //secretaria 5%
+            //Secretaria 5%
 
             if (rbtnSecretaria.Enabled == true)
             {
